@@ -2,7 +2,8 @@ import React, { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
 import { Send, Sparkles, Book, User, Bot, X, ExternalLink, ChevronRight, RotateCcw, Compass } from 'lucide-react';
 
-const API_BASE = "http://localhost:8000/api";
+// Use the environment variable if it exists, otherwise use localhost for dev
+const API_BASE = import.meta.env.VITE_API_URL || "http://localhost:8000/api";
 
 const CHAPTER_COUNTS = [47, 72, 43, 42, 29, 47, 30, 28, 34, 42, 55, 20, 35, 27, 20, 24, 28, 78];
 
