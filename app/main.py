@@ -8,14 +8,17 @@ import os
 app = FastAPI(title="Gita GPT", version="1.1.0")
 
 
+# Change this in your local code and push to GitHub
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"], # This allows your browser to talk to the API
+    allow_origins=[
+        "http://localhost:5173", 
+        "https://gita-gpt-xi.vercel.app" 
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
 
 # Registering both paths
 app.include_router(chat.router, prefix="/api", tags=["Spiritual AI (Advice)"])
