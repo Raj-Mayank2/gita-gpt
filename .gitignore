@@ -1,0 +1,17 @@
+# Secrets and Environment Variables
+.env
+.env.local
+.env.*
+
+# Python virtual environment
+venv/
+__pycache__/
+*.py[cod]
+
+# Node modules (Frontend)
+node_modules/
+dist/
+
+# Operating System files
+.DS_Store
+Thumbs.db

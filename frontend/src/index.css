@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+/* Smoothly blur the background when modal is open */
+.backdrop-blur-sm {
+  backdrop-filter: blur(4px);
+}
